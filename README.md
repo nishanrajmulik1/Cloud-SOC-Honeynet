@@ -2,7 +2,17 @@
 ![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/cc0aeca7-84e1-43d6-a80f-4787cc289b8d)
 
 ## Educational Context
+
 This project aligns with advanced cybersecurity studies in threat intelligence, cloud security, and deception technologies. It was designed to observe attacker behaviour and analyse malicious traffic in a controlled cloud environment.
+
+## Skills Demonstrated
+
+- Microsoft Azure security architecture
+- Microsoft Sentinel SIEM configurations and alerting
+- Log Analytics and KQL-based investigation
+- Network Security Group (NSG) hardening
+- Cloud threat detection and incident analysis
+- Security metrics analysis and reporting
 
 ## Introduction
 
@@ -81,4 +91,4 @@ It's important to note that if the network's resources had been actively used by
 
 ## Reflection
 
-Through this project, I learned how attackers interact with exposed cloud services and how honeynets can provide valuable threat intelligence. This experience enhanced my understanding of proactive detection and layered security strategies.
+Through this project, I learned how attackers interact with exposed cloud services and how honeynets can provide valuable threat intelligence. This experience enhanced my understanding of proactive detection and layered security strategies, and directly supports my career goals of working in cloud security or Security Analyst roles.
