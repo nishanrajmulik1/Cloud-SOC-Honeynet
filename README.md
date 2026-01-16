@@ -1,11 +1,12 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
 ![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/cc0aeca7-84e1-43d6-a80f-4787cc289b8d)
 
-
+## Educational Context
+This project aligns with advanced cybersecurity studies in threat intelligence, cloud security, and deception technologies. It was designed to observe attacker behaviour and analyse malicious traffic in a controlled cloud environment.
 
 ## Introduction
 
-In this project, I created a mini honeynet in Azure, where I integrated log sources from various resources into a Log Analytics workspace. This workspace was connected to Microsoft Sentinel, enabling the setup of attack maps, alert triggers, and incident creation. Initially, I monitored security metrics in an unsecured environment over a 24-hour period, then implemented security controls to strengthen the environment. I measured the metrics again for another 24 hours and compared the results. The metrics I will show are:
+In this project, I created a mini honeynet in Azure and integrated log sources from various sources into a Log Analytics workspace. This workspace was connected to Microsoft Sentinel, enabling the creation of attack maps, alert triggers, and incidents. Initially, I monitored security metrics in an unsecured environment over a 24-hour period, then implemented security controls to strengthen the environment. I measured the metrics again for another 24 hours and compared the results. The metrics I will show are:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -25,7 +26,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
+- Virtual Machines (2 windows, 1 Linux)
 - Log Analytics Workspace
 - Azure Key Vault
 - Azure Storage Account
@@ -56,7 +57,7 @@ Stop Time 2024-10-25T09:11:55.959525Z
 
 ## Attack Maps Before Hardening / Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```All map queries actually returned no results due to no instances of malicious activity for the 24-hour period after hardening.```
 
 ## Metrics After Hardening / Security Controls
 
@@ -74,6 +75,10 @@ Stop Time	2023-03-19 15:37
 
 ## Conclusion
 
-In this project, a mini honeynet was set up in Microsoft Azure, where log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was used to trigger alerts and generate incidents based on the collected logs. Security metrics were initially measured in an unsecured environment, then again after implementing security controls. The results showed a significant reduction in security events and incidents post-implementation, highlighting the effectiveness of the applied security measures.
+In this project, a mini honeynet was set up in Microsoft Azure, where log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was used to trigger alerts and generate incidents from collected logs. Security metrics were initially measured in an unsecured environment, then again after implementing security controls. The results showed a significant reduction in security events and incidents post-implementation, highlighting the effectiveness of the applied security measures.
 
-It's important to note that if the resources in the network had been actively used by regular users, there likely would have been a higher number of security events and alerts during the 24-hour period following the implementation of these security controls.
+It's important to note that if the network's resources had been actively used by regular users, there would likely have been more security events and alerts during the 24-hour period following the implementation of these security controls.
+
+## Reflection
+
+Through this project, I learned how attackers interact with exposed cloud services and how honeynets can provide valuable threat intelligence. This experience enhanced my understanding of proactive detection and layered security strategies.
